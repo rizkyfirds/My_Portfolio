@@ -4,31 +4,32 @@ import ButtonHoverBlue from "../button/ButtonHoverBlue";
 
 export default function Header() {
   return (
-    <div className="h-full w-full px-16">
-      <div className="flex h-1/3">
-        <div className="flex w-2/3 justify-end">
-          <img src={Profile} alt="" />
-          <p className="px-8 text-8xl font-bold my-auto text-blue">Muhammad</p>
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="lg:flex h-1/3">
+        <div className="mx-auto lg:flex lg:justify-end">
+          <img src={Profile} alt="" className="w-1/3 lg:w-auto"/>
+          <p className="lg:mx-8 text-5xl lg:text-8xl font-bold my-auto text-blue">Muhammad</p>
         </div>
       </div>
-      <div className="flex h-1/3 justify-end">
-        <div className="flex w-2/3">
-          <p className="px-8 text-8xl font-bold my-auto text-blue">
+      <div className="lg:flex h-1/3 lg:justify-end">
+        <div className="lg:flex mx-auto">
+          <p className="lg:mx-8 text-5xl lg:text-8xl font-bold my-auto text-blue">
             Rizky Firdaus
           </p>
         </div>
       </div>
-      <div className="h-1/3 pt-4">
+      <div className="h-1/3 mt-4">
         <div>
-          <p className="text-4xl font-bold my-auto text-blue mb-5">
+          <p className="text-3xl lg:text-4xl font-bold my-auto text-blue mb-5">
             Front-end Developer
           </p>
         </div>
-        <div className="flex gap-4">
+        <div className="lg:flex gap-4">
           <a
             href="https://github.com/rizkyfirds"
             target="_blank"
             rel="noopener noreferrer"
+            className=""
           >
             <ButtonHoverBlue label={"View Github"} isFlex={true} />
           </a>
