@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BsArrowDownRightCircle } from "react-icons/bs";
 // import { BiSolidRightTopArrowCircle } from "react-icons/bi";
 import msib from "../../assets/msib.jpg";
@@ -9,10 +9,10 @@ export default function CertificateBody() {
   return (
     <div className="m-4 md:my-10">
       <div className="flex text-blue justify-between">
-        <p className="text-3xl md:text-9xl font-bold">Certificate</p>
-        <BsArrowDownRightCircle className="hidden md:text-8xl my-auto" />
+        <p className="text-3xl md:text-6xl lg:text-9xl font-bold">Certificate</p>
+        <BsArrowDownRightCircle className="hidden md:text-6xl lg:text-8xl my-auto" />
       </div>
-      <div className="flex mt-4 md:mb-9 gap-x-6">
+      <div className="flex mt-2 md:mt-6 lg:mt-14 md:mb-9 gap-x-6">
         <HoverImg
           company={"PT. Len Industri (Persero)"}
           desc={"MSIB Batch 5 as Frontend Developer. This certificate is obtained from the MSIB platform."}

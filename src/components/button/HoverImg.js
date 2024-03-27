@@ -16,8 +16,8 @@ export default function HoverImg({
 
   return (
     <div className="max-h-96 w-1/3">
-      <h1 className="text-sm md:text-4xl text-blue font-bold">{company}</h1>
-      <h1 className="text-sm md:text-xl text-blue font-semibold  mb-2">
+      <h1 className="text-sm md:text-2xl lg:text-4xl text-blue font-bold">{company}</h1>
+      <h1 className="text-sm md:text-lg lg::text-xl text-blue font-semibold  mb-2">
         {desc}
       </h1>
 

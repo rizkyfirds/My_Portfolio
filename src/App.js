@@ -70,7 +70,7 @@ function App() {
       <div className='h-fit md:mx-16 mb-8'>
         <Header/>
       </div>
-      <div className='h-fit bg-blue md:px-16 py-8' ref={experienceRef}>
+      <div className='h-fit w-full bg-blue md:px-16 py-4 lg:py-8' ref={experienceRef}>
         <ExperienceBdoy/>
       </div>
       <div className='h-fit md:mx-16 my-8' ref={projectRef}>
@@ -79,7 +79,7 @@ function App() {
       <div className='h-fit md:mx-16 my-8' ref={certificateRef}>
         <CertificateBody/>
       </div>
-      <div className='h-fit bg-blue md:px-14 py-8' ref={contactRef}>
+      <div className='h-fit bg-blue md:px-14 py-4 lg:py-8' ref={contactRef}>
         <FooterBody/>
       </div>
       {showScrollButton && (

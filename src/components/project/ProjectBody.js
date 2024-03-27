@@ -8,8 +8,8 @@ export default function ProjectBody() {
   return (
     <div className="m-4">
       <div className="flex text-blue justify-between">
-        <p className="text-3xl md:text-9xl font-bold">Project</p>
-        <BsArrowDownRightCircle className="hidden md:text-8xl my-auto" />
+        <p className="text-3xl md:text-6xl lg:text-9xl font-bold">Project</p>
+        <BsArrowDownRightCircle className="hidden md:text-6xl lg:text-8xl my-auto" />
       </div>
       <div className="md:mb-9">
         <div>
