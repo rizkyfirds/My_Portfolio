@@ -4,7 +4,6 @@ import { HiOutlineArrowUpRight } from "react-icons/hi2";
 export default function ButtonHoverBlue({ label, isFlex = false, click = false, isStat = false }) {
 
   const handleClick = () => {
-    // console.log("test"); 
     isStat(true);
   };
 

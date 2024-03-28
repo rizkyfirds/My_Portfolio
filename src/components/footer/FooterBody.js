@@ -3,9 +3,7 @@ import { FaInstagram, FaLinkedinIn, FaRegCopyright } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 
 export default function FooterBody() {
-  //   const redirectToInstagram = () => {
-  //     window.location.href = "https://www.instagram.com/rizkyfirds/";
-  //   };
+
   return (
     <div className="lg:flex gap-4 mx-4 my-2 bg-blue">
       <div className="text-3xl md:text-6xl lg:text-9xl font-bold text-white mb-6">
