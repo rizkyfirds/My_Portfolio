@@ -19,7 +19,7 @@ export default function HoverImg({ company, desc, titleImg }) {
         {desc}
       </h1>
       <div
-        className={`flex md:h-2/3 w-fit border-4 border-blue rounded-xl relative ${
+        className={`flex md:h-2/3 w-fit lg:w-2/3 border-4 border-blue rounded-xl relative ${
           isHovered ? "hovered" : ""
         }`}
         onMouseEnter={() => setIsHovered(true)}

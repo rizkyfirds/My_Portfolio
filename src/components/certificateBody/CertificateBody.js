@@ -24,16 +24,6 @@ export default function CertificateBody() {
           desc={"MSIB Batch 5 as Frontend Developer. This certificate is obtained from the Magentaku platform."}
           titleImg={magenta}
         />
-        <HoverImg
-          company={"PT. Len Industri (Persero)"}
-          desc={"MSIB Batch 5 as Frontend Developer. This certificate is obtained from the Magentaku platform."}
-          titleImg={magenta}
-        />
-        <HoverImg
-          company={"PT. Len Industri (Persero)"}
-          desc={"MSIB Batch 5 as Frontend Developer. This certificate is obtained from the Magentaku platform."}
-          titleImg={magenta}
-        />
         </div>
       </div>
     </div>
