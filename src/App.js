@@ -67,27 +67,27 @@ function App() {
           isCont={isContactStat}
         />
       </div>
-      <div className='h-fit md:mx-16 mb-8'>
+      <div className='h-fit md:mx-16 py-12 lg:py-16'>
         <Header/>
       </div>
-      <div className='h-fit w-full bg-blue md:px-16 py-4 lg:py-8' ref={experienceRef}>
+      <div className='h-fit w-full bg-blue md:px-16 py-12 lg:py-16' ref={experienceRef}>
         <ExperienceBdoy/>
       </div>
-      <div className='h-fit md:mx-16 my-8' ref={projectRef}>
+      <div className='h-fit md:mx-16 py-12 lg:py-16' ref={projectRef}>
         <ProjectBody/>
       </div>
-      <div className='h-fit md:mx-16 my-8' ref={certificateRef}>
+      <div className='h-fit md:mx-16 py-12 lg:py-16' ref={certificateRef}>
         <CertificateBody/>
       </div>
-      <div className='h-fit bg-blue md:px-14 py-4 lg:py-8' ref={contactRef}>
+      <div className='h-fit bg-blue md:px-14 py-12 lg:py-16' ref={contactRef}>
         <FooterBody/>
       </div>
       {showScrollButton && (
         <button
-          className="fixed bottom-8 right-8 z-50 bg-blue rounded-full shadow-xl p-2 text-white animate-bounce"
+          className="fixed bottom-8 right-8 z-10 bg-blue rounded-full shadow-xl p-4 text-white animate-bounce"
           onClick={handleMoveToTop}
         >
-          <BiSolidToTop className='text-lg ' />
+          <BiSolidToTop className='text-xl ' />
         </button>
       )}
     </div>

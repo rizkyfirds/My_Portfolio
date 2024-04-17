@@ -11,8 +11,8 @@ export default function ButtonHoverBlue({ label, isFlex = false, click = false, 
     <button 
       onClick={click ? handleClick : null}
       className={`${
-        isFlex ? "justify-center items-center flex md:py-2 md:gap-2 mb-2" : ""
-      } my-auto w-full font-semibold rounded-full border-solid border-2 px-4 text-blue border-blue hover:bg-blue hover:text-white md:hover:scale-110 transition-transform hover:font-semibold`}
+        isFlex ? "justify-center items-center flex md:py-4 px-8 md:gap-2 mb-2" : ""
+      } my-auto w-full font-semibold rounded-full border-solid border-2 px-4 py-2 text-blue border-blue hover:bg-blue hover:text-white md:hover:scale-110 transition-transform hover:font-semibold`}
     >
       <p>{label}</p>
       {isFlex && <HiOutlineArrowUpRight className="my-auto" />}

@@ -53,7 +53,7 @@ export default function Headbar({
               </button>
             </div>
             {menuBar ? (
-              <div className="absolute w-1/2 right-0 text-sm bg-white rounded-xl border-solid border-2 border-blue mt-2 top-5">
+              <div className="absolute max-w-full right-0 text-sm bg-white rounded-xl border-solid border-2 border-blue mt-2 top-5">
                 <button
                   onClick={() => {isExp(true); setMenuBar(!menuBar);}}
                   className="w-full font-semibold px-4 py-2 text-blue hover:bg-blue hover:text-white hover:font-semibold hover:rounded-t-xl"

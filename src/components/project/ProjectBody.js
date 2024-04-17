@@ -3,16 +3,17 @@ import { BsArrowDownRightCircle } from "react-icons/bs";
 import ProjectText from "./ProjectText";
 import ReactPlayer from "react-player/youtube";
 import Port from "../../assets/projectPort.png";
+import Drink from "../../assets/drink.png";
 
 export default function ProjectBody() {
   return (
     <div className="m-4">
-      <div className="flex text-blue justify-between">
+      <div className="flex text-blue justify-between mb-6 md:mb-20">
         <p className="text-3xl md:text-6xl lg:text-9xl font-bold">Project</p>
         <BsArrowDownRightCircle className="hidden md:text-6xl lg:text-8xl my-auto" />
       </div>
       <div className="md:mb-9">
-        <div>
+        <div className="mb-12">
           <ProjectText
             label={
               "Administration Website of SD Islam Terpadu INSPIRATIF Bojongsari"
@@ -35,8 +36,8 @@ export default function ProjectBody() {
             />
           </div>
         </div>
-        <div>
-          <ProjectText
+        <div className="mb-12">
+        <ProjectText
             label={
               "My Portfolio"
             }
@@ -44,8 +45,24 @@ export default function ProjectBody() {
               "This portfolio was built using React.js and TailwindCSS."
             }
             gitLogo={true}
+            linkSite={"https://mrizkyfirdaus-portfolio.vercel.app/"}
+            linkGit={"https://github.com/rizkyfirds/My_Portfolio"}
           />
           <img src={Port} alt="" className="rounded-xl border-blue p-1 border-4" />
+        </div>
+        <div className="mb-12">
+          <ProjectText
+            label={
+              "Drink RL"
+            }
+            desc={
+              "This project Drink RL was built using React.js and TailwindCSS."
+            }
+            gitLogo={true}
+            linkSite={"https://drink-rl.vercel.app/"}
+            linkGit={"https://github.com/rizkyfirds/drinkRL-vercel.git"}
+          />
+          <img src={Drink} alt="" className="rounded-xl border-blue p-1 border-4" />
         </div>
       </div>
     </div>

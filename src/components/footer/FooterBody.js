@@ -6,7 +6,7 @@ export default function FooterBody() {
 
   return (
     <div className="lg:flex gap-4 mx-4 my-2 bg-blue">
-      <div className="text-3xl md:text-6xl lg:text-9xl font-bold text-white mb-6">
+      <div className="text-4xl md:text-6xl lg:text-9xl font-bold text-white mb-8">
         <p>Let's Work</p>
         <p className="">Together</p>
       </div>

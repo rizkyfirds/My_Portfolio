@@ -4,23 +4,23 @@ import ButtonHoverBlue from "../button/ButtonHoverBlue";
 
 export default function Header() {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="lg:flex h-1/3">
-        <div className="mx-auto lg:flex lg:justify-end">
-          <img src={Profile} alt="" className="w-1/3 lg:w-auto"/>
+    <div className="container px-4 sm:px-6 lg:px-8">
+      <div className="flex justify-center">
+        <div className="lg:flex lg:justify-end w-fit">
+          <img src={Profile} alt="" className=" w-auto mx-auto"/>
           <p className="lg:mx-8 text-5xl lg:text-8xl font-bold my-auto text-blue">Muhammad</p>
         </div>
       </div>
-      <div className="lg:flex h-1/3 lg:justify-end">
-        <div className="lg:flex mx-auto">
-          <p className="lg:mx-8 text-5xl lg:text-8xl font-bold my-auto text-blue">
+      <div className="lg:flex lg:justify-end">
+        <div className="lg:flex mx-auto w-fit">
+          <p className="lg:mx-8 text-5xl lg:text-8xl font-bold text-blue">
             Rizky Firdaus
           </p>
         </div>
       </div>
-      <div className="h-1/3 mt-4">
-        <div>
-          <p className="text-3xl lg:text-4xl font-bold my-auto text-blue mb-5">
+      <div className="my-20">
+        <div className="flex justify-center lg:justify-start">
+          <p className="text-3xl lg:text-6xl font-bold my-auto text-blue mb-5">
             Front-end Developer
           </p>
         </div>

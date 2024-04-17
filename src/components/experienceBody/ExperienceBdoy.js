@@ -8,7 +8,7 @@ export default function ExperienceBdoy() {
         <IoArrowForwardCircleOutline className="text-3xl md:text-6xl lg:text-9xl text-white font-bold mt-1"/>
       </div>
       <div className="md:w-3/4 mx-4">
-        <p className="text-3xl md:text-6xl lg:text-9xl mb-2 md:mb-14 text-white font-bold">Experience</p>
+        <p className="text-3xl md:text-6xl lg:text-9xl mb-6 md:mb-20 text-white font-bold">Experience</p>
         <div className="gap-y-10">
           <TextExperience
             date={"Aug 2023 - Dec 2023"}
