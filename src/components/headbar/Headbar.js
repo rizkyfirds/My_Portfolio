@@ -22,10 +22,10 @@ export default function Headbar({
 
   return (
     <div className="w-full h-full relative z-30">
-      <div className="px-4 md:px-16 flex h-1/2">
+      <div className="h-full px-4 md:px-16 flex h-1/2">
         <div className="flex w-1/2 h-1/2 my-auto">
           <div className="flex h-full">
-            <img src={Profile} alt="" className="h-full" />
+            <img src={Profile} alt="" className="h-full my-auto" />
             <p className="px-3 my-auto font-bold text-sm md:text-lg text-blue">
               Muhammad Rizky Firdaus
             </p>

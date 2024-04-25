@@ -4,7 +4,7 @@ import './App.css';
 import { BiSolidToTop } from "react-icons/bi";
 import Header from '../src/components/header/Header.js';
 import Headbar from './components/headbar/Headbar.js';
-import ExperienceBdoy from './components/experienceBody/ExperienceBdoy.js';
+import ExperienceBdoy from './components/experienceBody/ExperienceBody.js';
 import ProjectBody from './components/project/ProjectBody.js';
 import CertificateBody from './components/certificateBody/CertificateBody.js';
 import FooterBody from './components/footer/FooterBody.js';
@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className='h-screen w-full font-inter relative'>
-      <div className='h-1/6'>
+      <div className='h-1/6 py-[24px]'>
         <Headbar 
           exp={experienceStat} 
           isExp={isExperienceStat} 

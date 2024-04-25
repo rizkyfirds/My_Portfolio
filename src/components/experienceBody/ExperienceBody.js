@@ -1,13 +1,13 @@
 import React from "react";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import TextExperience from "./TextExperience";
-export default function ExperienceBdoy() {
+export default function ExperienceBody() {
   return (
     <div className="flex h-full gap-4 overflow-y-auto">
-      <div className="hidden md:flex w-1/6 md:w-1/4 justify-end">
+      <div className="hidden md:flex w-1/6 md:w-1/5 justify-end">
         <IoArrowForwardCircleOutline className="text-3xl md:text-6xl lg:text-9xl text-white mt-1"/>
       </div>
-      <div className="md:w-3/4 mx-4">
+      <div className="md:w-4/5 mx-4">
         <p className="text-3xl md:text-6xl lg:text-[148px] mb-6 md:mb-20 text-white font-bold">Experience</p>
         <div className="gap-y-10">
           <TextExperience

@@ -4,7 +4,7 @@ import ButtonHoverBlue from "../button/ButtonHoverBlue";
 
 export default function Header() {
   return (
-    <div className="container px-4 sm:px-6 lg:px-8">
+    <div className="px-4 sm:px-6 lg:px-8">
       <div className="flex justify-center">
         <div className="lg:flex lg:justify-end w-fit">
           <img src={Profile} alt="" className=" w-auto mx-auto"/>
