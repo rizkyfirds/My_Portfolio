@@ -14,7 +14,7 @@ export default function ProjectText({
       <div
         className={`${
           gitLogo ? "flex justify-between" : ""
-        } font-bold text-lg md:text-2xl lg:text-4xl mb-2 md:mb-4`}
+        } font-bold text-lg md:text-2xl lg:text-[40px] mb-2 md:mb-[16px]`}
       >
         <p className="my-auto">{label}</p>
         <div className="gap-x-4 flex">
@@ -42,7 +42,7 @@ export default function ProjectText({
           </a>
         </div>
       </div>
-      <p className="text-sm md:text-lg lg:text-xl font-semibold text-justify leading-6 lg:leading-8">
+      <p className="text-sm md:text-lg lg:text-[24px] font-semibold text-justify leading-6 lg:leading-8">
         {desc}
       </p>
     </div>

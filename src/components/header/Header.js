@@ -8,19 +8,19 @@ export default function Header() {
       <div className="flex justify-center">
         <div className="lg:flex lg:justify-end w-fit">
           <img src={Profile} alt="" className=" w-auto mx-auto"/>
-          <p className="lg:mx-8 text-5xl lg:text-8xl font-bold my-auto text-blue">Muhammad</p>
+          <p className="lg:mx-8 text-5xl lg:text-[148px] font-bold my-auto text-blue">Muhammad</p>
         </div>
       </div>
       <div className="lg:flex lg:justify-end">
         <div className="lg:flex mx-auto w-fit">
-          <p className="lg:mx-8 text-5xl lg:text-8xl font-bold text-blue">
+          <p className="lg:mx-8 text-5xl lg:text-[148px] font-bold text-blue">
             Rizky Firdaus
           </p>
         </div>
       </div>
       <div className="my-20">
         <div className="flex justify-center lg:justify-start">
-          <p className="text-3xl lg:text-6xl font-bold my-auto text-blue mb-5">
+          <p className="text-3xl lg:text-[72px] font-bold my-auto text-blue mb-[32px]">
             Front-end Developer
           </p>
         </div>

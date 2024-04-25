@@ -5,10 +5,10 @@ export default function ExperienceBdoy() {
   return (
     <div className="flex h-full gap-4 overflow-y-auto">
       <div className="hidden md:flex w-1/6 md:w-1/4 justify-end">
-        <IoArrowForwardCircleOutline className="text-3xl md:text-6xl lg:text-9xl text-white font-bold mt-1"/>
+        <IoArrowForwardCircleOutline className="text-3xl md:text-6xl lg:text-9xl text-white mt-1"/>
       </div>
       <div className="md:w-3/4 mx-4">
-        <p className="text-3xl md:text-6xl lg:text-9xl mb-6 md:mb-20 text-white font-bold">Experience</p>
+        <p className="text-3xl md:text-6xl lg:text-[148px] mb-6 md:mb-20 text-white font-bold">Experience</p>
         <div className="gap-y-10">
           <TextExperience
             date={"Aug 2023 - Dec 2023"}

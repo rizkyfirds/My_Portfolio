@@ -54,7 +54,7 @@ function App() {
   };
 
   return (
-    <div className='h-screen w-full relative'>
+    <div className='h-screen w-full font-inter relative'>
       <div className='h-1/6'>
         <Headbar 
           exp={experienceStat} 
@@ -67,19 +67,19 @@ function App() {
           isCont={isContactStat}
         />
       </div>
-      <div className='h-fit md:mx-16 py-12 lg:py-16'>
+      <div className='h-fit md:mx-[80px] py-12 lg:py-[64px]'>
         <Header/>
       </div>
-      <div className='h-fit w-full bg-blue md:px-16 py-12 lg:py-16' ref={experienceRef}>
+      <div className='h-fit w-full bg-blue md:px-[80px] py-12 lg:py-[64px]' ref={experienceRef}>
         <ExperienceBdoy/>
       </div>
-      <div className='h-fit md:mx-16 py-12 lg:py-16' ref={projectRef}>
+      <div className='h-fit md:mx-[80px] py-12 lg:py-[64px]' ref={projectRef}>
         <ProjectBody/>
       </div>
-      <div className='h-fit md:mx-16 py-12 lg:py-16' ref={certificateRef}>
+      <div className='h-fit md:mx-[80px] py-12 lg:py-[64px]' ref={certificateRef}>
         <CertificateBody/>
       </div>
-      <div className='h-fit bg-blue md:px-14 py-12 lg:py-16' ref={contactRef}>
+      <div className='h-fit bg-blue md:px-14 py-12 lg:py-[64px]' ref={contactRef}>
         <FooterBody/>
       </div>
       {showScrollButton && (
