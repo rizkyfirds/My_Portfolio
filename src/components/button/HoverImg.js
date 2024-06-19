@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
+import { IoIosCloseCircle } from "react-icons/io";
 import msib from "../../assets/msib.jpg";
 import magenta from "../../assets/magenta.jpg";
 
 export default function HoverImg({ company, desc, titleImg }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleClickImg = () => {
-    window.open(titleImg, "_blank");
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -33,12 +39,24 @@ export default function HoverImg({ company, desc, titleImg }) {
           }`}
         >
           <div className="flex m-auto bg-blue text-white rounded-3xl py-2 px-4 gap-x-2">
-
-          <MdArrowOutward className="text-xl my-auto font-bold" />
-          <p className="text-sm font-semibold">View</p>
+            <MdArrowOutward className="text-xl my-auto font-bold" />
+            <p className="text-sm font-semibold">View</p>
           </div>
         </button>
       </div>
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 bg-blue/50">
+          <div className="relative flex items-center justify-center bg-blue/90 border-white border-2 rounded-xl p-4 w-1/2 h-3/4">
+            <button
+              onClick={handleCloseModal}
+              className="absolute top-0 right-0 m-2 text-xl font-bold text-white"
+            >
+              <IoIosCloseCircle className="text-white text-2xl"/>
+            </button>
+            <img src={titleImg} alt="" className="w-fit h-full" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -54,8 +54,8 @@ function App() {
   };
 
   return (
-    <div className='h-screen w-full font-inter relative'>
-      <div className='h-1/6 py-[24px]'>
+    <div className='h-screen w-full font-inter relative bg-white'>
+      <div className='fixed top-0 z-20 w-full h-16 bg-white'>
         <Headbar 
           exp={experienceStat} 
           isExp={isExperienceStat} 

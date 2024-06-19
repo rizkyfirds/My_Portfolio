@@ -8,7 +8,7 @@ export default function ExperienceBody() {
         <IoArrowForwardCircleOutline className="text-3xl md:text-6xl lg:text-9xl text-white mt-1"/>
       </div>
       <div className="md:w-4/5 mx-4">
-        <p className="text-3xl md:text-6xl lg:text-[148px] mb-6 md:mb-20 text-white font-bold">Experience</p>
+        <p className="text-3xl md:text-6xl lg:text-9xl mb-6 md:mb-20 text-white font-bold">Experience</p>
         <div className="gap-y-10">
           <TextExperience
             date={"Aug 2023 - Dec 2023"}

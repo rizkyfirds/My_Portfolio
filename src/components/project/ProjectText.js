@@ -10,11 +10,11 @@ export default function ProjectText({
   linkSite,
 }) {
   return (
-    <div className="mt-2 md:mt-6 lg:mt-14 mb-8 text-blue ">
+    <div className="mt-2 md:mt-6 mb-8 text-white ">
       <div
         className={`${
           gitLogo ? "flex justify-between" : ""
-        } font-bold text-lg md:text-2xl lg:text-[40px] mb-2 md:mb-[16px]`}
+        } font-bold text-lg md:text-2xl lg:text-3xl mb-2 md:mb-[16px]`}
       >
         <p className="my-auto leading-tight">{label}</p>
         <div className="gap-x-4 flex">
@@ -42,7 +42,7 @@ export default function ProjectText({
           </a>
         </div>
       </div>
-      <p className="text-sm md:text-lg lg:text-[24px] font-semibold text-justify leading-6 lg:leading-8">
+      <p className="text-sm md:text-lg lg:text-xl  text-justify leading-6 lg:leading-8">
         {desc}
       </p>
     </div>

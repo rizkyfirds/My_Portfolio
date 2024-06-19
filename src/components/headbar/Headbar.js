@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Profile from "../../assets/Profile.png";
+import Profile from "../../assets/NewProfile.jpg";
 import ButtonHoverBlue from "../button/ButtonHoverBlue";
 import { HiBars2 } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
@@ -25,7 +25,7 @@ export default function Headbar({
       <div className="h-full px-4 md:px-16 flex h-1/2">
         <div className="flex w-1/2 h-1/2 my-auto">
           <div className="flex h-full">
-            <img src={Profile} alt="" className="h-full my-auto" />
+            <img src={Profile} alt="" className="rounded-full h-full my-auto" />
             <p className="px-3 my-auto font-bold text-sm md:text-lg text-blue">
               Muhammad Rizky Firdaus
             </p>
