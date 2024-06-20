@@ -4,7 +4,7 @@ import ButtonHoverBlue from "../button/ButtonHoverBlue";
 
 export default function Header() {
   return (
-    <div className="mt-14 px-4 sm:px-6 lg:px-8">
+    <div className="mt-28 px-4 sm:px-6 lg:px-8">
       <div className="lg:flex justify-center lg:grid grid-cols-12">
         <img
           src={Profile}

@@ -23,7 +23,7 @@ export default function ProjectText({
             target="_blank"
             rel="noopener noreferrer"
             className={`${
-              gitLogo ? "relative h-fit p-2 rounded-full border-2" : "hidden"
+              gitLogo ? "relative h-fit p-2 rounded-full border-2 hover:bg-white hover:text-blue md:hover:scale-110 transition-transform hover:font-semibold" : "hidden"
             }`}
           >
             <FaExternalLinkAlt className="text-sm md:text-xl lg:text-2xl" />
@@ -34,11 +34,11 @@ export default function ProjectText({
             rel="noopener noreferrer"
             className={`${
               gitLogo
-                ? "relative h-fit p-2 rounded-full border-2"
+                ? "relative h-fit p-2 rounded-full border-2 hover:bg-white hover:text-blue md:hover:scale-110 transition-transform hover:font-semibold"
                 : "hidden"
             }`}
           >
-            <FiGithub className="text-sm md:text-xl lg:text-2xl" />
+            <FiGithub className="text-sm md:text-xl lg:text-2xl " />
           </a>
         </div>
       </div>

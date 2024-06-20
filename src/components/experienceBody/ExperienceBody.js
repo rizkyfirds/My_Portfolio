@@ -5,10 +5,10 @@ export default function ExperienceBody() {
   return (
     <div className="flex h-full gap-4 overflow-y-auto">
       <div className="hidden md:flex w-1/6 md:w-1/5 justify-end">
-        <IoArrowForwardCircleOutline className="text-3xl md:text-6xl lg:text-9xl text-white mt-1"/>
+        <IoArrowForwardCircleOutline className="text-3xl md:text-6xl lg:text-[100px] text-white mt-1"/>
       </div>
-      <div className="md:w-4/5 mx-4">
-        <p className="text-3xl md:text-6xl lg:text-9xl mb-6 md:mb-20 text-white font-bold">Experience</p>
+      <div className="md:w-4/5 sm:mx-4  md:mx-4 lg:mr-64">
+        <p className="text-3xl md:text-6xl lg:text-[100px] mb-6 md:mb-20 text-white font-bold">Experience</p>
         <div className="gap-y-10">
           <TextExperience
             date={"Aug 2023 - Dec 2023"}

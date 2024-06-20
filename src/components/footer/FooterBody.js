@@ -5,12 +5,12 @@ import { FiGithub } from "react-icons/fi";
 export default function FooterBody() {
 
   return (
-    <div className="lg:flex gap-4 mx-4 my-2 bg-blue">
-      <div className="text-4xl md:text-6xl lg:text-9xl font-bold text-white mb-8">
+    <div className="lg:flex lg:justify-between gap-4 mx-4 lg:mx-40 my-2 bg-blue">
+      <div className="text-4xl md:text-6xl lg:text-[100px] font-bold text-white mb-8">
         <p>Let's Work</p>
         <p className="">Together</p>
       </div>
-      <div className=" p-4 rounded-lg bg-navy bg-opacity-20 m-auto">
+      <div className="p-4 rounded-lg bg-navy bg-opacity-20 ">
           <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-white">
             Connect Social Media
           </p>

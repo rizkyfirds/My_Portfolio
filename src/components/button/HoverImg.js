@@ -46,7 +46,7 @@ export default function HoverImg({ company, desc, titleImg }) {
       </div>
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-blue/50">
-          <div className="relative flex items-center justify-center bg-blue/90 border-white border-2 rounded-xl p-4 w-1/2 h-3/4">
+          <div className="relative flex items-center justify-center bg-blue/90 border-white border-2 rounded-xl p-4 h-1/2 lg:h-3/4">
             <button
               onClick={handleCloseModal}
               className="absolute top-0 right-0 m-2 text-xl font-bold text-white"
