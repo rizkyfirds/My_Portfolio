@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { MdArrowOutward } from "react-icons/md";
-import { IoIosCloseCircle } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
 import msib from "../../assets/msib.jpg";
 import magenta from "../../assets/magenta.jpg";
 
 export default function HoverImg({ company, desc, titleImg }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const modalRef = useRef(null);
 
   const handleClickImg = () => {
     setIsModalOpen(true);
@@ -16,9 +17,27 @@ export default function HoverImg({ company, desc, titleImg }) {
     setIsModalOpen(false);
   };
 
+  const handleClickOutside = (e) => {
+    if (modalRef.current &&!modalRef.current.contains(e.target)) {
+      setIsModalOpen(false);
+    }
+  }
+
+  useEffect(()=> {
+    if (isModalOpen){
+      document.addEventListener('mousedown', handleClickOutside)
+    }else{
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isModalOpen])
+
   return (
     <div className="snap-start h-fit min-w-72 max-w-full mb-4">
-      <h1 className="text-xl md:text-2xl lg:text-4xl text-blue font-bold mb-2 lg:mb-4">
+      <h1 className="text-lg md:text-xl lg:text-3xl text-blue font-bold mb-2 lg:mb-4">
         {company}
       </h1>
       <h1 className="text-sm md:text-lg lg::text-xl text-blue font-semibold mb-4 leading-6 lg:leading-8">
@@ -46,12 +65,12 @@ export default function HoverImg({ company, desc, titleImg }) {
       </div>
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-blue/50">
-          <div className="relative flex items-center justify-center bg-blue/90 border-white border-2 rounded-xl p-4 h-1/2 lg:h-3/4">
+          <div ref={modalRef} className="relative flex items-center justify-center bg-blue/90 border-white border-2 rounded-xl p-4 h-1/2 lg:h-3/4">
             <button
               onClick={handleCloseModal}
-              className="absolute top-0 right-0 m-2 text-xl font-bold text-white"
+              className="absolute top-0 right-0 m-2 text-xl font-bold text-blue bg-white hover:bg-blue hover:text-white rounded-full"
             >
-              <IoIosCloseCircle className="text-white text-2xl"/>
+              <IoClose className=" text-2xl"/>
             </button>
             <img src={titleImg} alt="" className="w-fit h-full" />
           </div>

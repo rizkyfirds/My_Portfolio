@@ -10,11 +10,11 @@ export default function ProjectText({
   linkSite,
 }) {
   return (
-    <div className="mt-2 md:mt-6 mb-8 text-white ">
+    <div className="my-2 text-white ">
       <div
         className={`${
           gitLogo ? "flex justify-between" : ""
-        } font-bold text-lg md:text-2xl lg:text-3xl mb-2 md:mb-[16px]`}
+        } font-bold text-lg md:text-xl lg:text-2xl mb-2 md:mb-[16px]`}
       >
         <p className="my-auto leading-tight">{label}</p>
         <div className="gap-x-4 flex">
@@ -26,7 +26,7 @@ export default function ProjectText({
               gitLogo ? "relative h-fit p-2 rounded-full border-2 hover:bg-white hover:text-blue md:hover:scale-110 transition-transform hover:font-semibold" : "hidden"
             }`}
           >
-            <FaExternalLinkAlt className="text-sm md:text-xl lg:text-2xl" />
+            <FaExternalLinkAlt className="text-sm md:text-base lg:text-lg" />
           </a>
           <a
             href={linkGit}
@@ -38,11 +38,11 @@ export default function ProjectText({
                 : "hidden"
             }`}
           >
-            <FiGithub className="text-sm md:text-xl lg:text-2xl " />
+            <FiGithub className="text-sm md:text-base lg:text-lg " />
           </a>
         </div>
       </div>
-      <p className="text-sm md:text-lg lg:text-xl  text-justify leading-6 lg:leading-8">
+      <p className="text-sm md:text-base lg:text-lg  text-justify leading-6 lg:leading-8">
         {desc}
       </p>
     </div>

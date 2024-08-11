@@ -10,12 +10,12 @@ export default function ProjectBody() {
   return (
     <div className="m-4">
       <div className="flex text-blue justify-between mb-6 md:mb-[64px]">
-        <p className="text-3xl md:text-6xl lg:text-[100px] font-bold">Project</p>
-        <BsArrowDownRightCircle className="hidden lg:flex md:text-6xl lg:text-[90px] my-auto" />
+        <p className="text-3xl md:text-6xl lg:text-[90px] font-bold">Project</p>
+        <BsArrowDownRightCircle className="hidden lg:flex md:text-6xl lg:text-[80px] my-auto" />
       </div>
       <div className="md:mb-9">
         <div className="md:flex md:gap-8">
-          <div className="md:w-1/2 p-7 rounded-3xl bg-blue mb-8">
+          <div className="md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8">
             <ProjectText
               label={
                 "Administration Website of SD Islam Terpadu INSPIRATIF Bojongsari"
@@ -30,7 +30,7 @@ export default function ProjectBody() {
                 className="md:w-auto w-full h-full"
               />
           </div>
-          <div className="md:w-1/2 p-7 rounded-3xl bg-blue mb-8">
+          <div className="md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8">
             <ProjectText
               label={"My Portfolio"}
               desc={"This portfolio was built using React.js and Tailwind CSS."}
@@ -46,7 +46,7 @@ export default function ProjectBody() {
           </div>
         </div>
         <div className="md:flex gap-8">
-          <div className=" md:w-1/2 p-7 rounded-3xl bg-blue mb-8">
+          <div className=" md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8">
             <ProjectText
               label={"Drink RL"}
               desc={
@@ -62,7 +62,7 @@ export default function ProjectBody() {
               className="rounded-3xl border-blue p-1 border-4"
             />
           </div>
-          <div className="md:w-1/2 p-7 rounded-3xl bg-blue mb-8">
+          <div className="md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8">
             <ProjectText
               label={"Portfolio Salsabila"}
               desc={

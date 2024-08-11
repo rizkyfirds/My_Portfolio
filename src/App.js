@@ -56,8 +56,8 @@ function App() {
 
   return (
     <ParallaxProvider>
-      <div className="h-screen w-full font-inter relative bg-white">
-        <div className="fixed top-0 z-20 w-full h-16 bg-white">
+      <div className="h-full w-full font-inter relative bg-custom-white bg-whiteMain">
+        <div className="fixed top-0 z-20 w-full h-14 bg-custom-white bg-whiteMain">
           <Headbar
             exp={experienceStat}
             isExp={isExperienceStat}
@@ -75,7 +75,7 @@ function App() {
           </div>
         </Parallax>
         <div
-          className="h-fit w-full bg-blue md:px-[80px] py-12 lg:py-[84px] z-10 relative"
+          className="h-fit w-full bg-custom-blue bg-blueBackground px-[15px] md:px-[30px] py-12 lg:py-[84px] z-10 relative"
           ref={experienceRef}
         >
           <ExperienceBody />
@@ -84,13 +84,13 @@ function App() {
           <ProjectBody />
         </div>
         <div
-          className="h-fit md:mx-[80px] py-12 lg:py-[64px]"
+          className="h-fit md:mx-[80px] py-12 lg:pb-[64px] lg:pt-[20px]"
           ref={certificateRef}
         >
           <CertificateBody />
         </div>
         <div
-          className="h-fit bg-blue md:px-14 py-12 lg:py-[84px]"
+          className="h-fit bg-custom-blue bg-blueBackground md:px-10 py-12 lg:py-[84px]"
           ref={contactRef}
         >
           <FooterBody />

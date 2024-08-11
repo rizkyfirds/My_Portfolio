@@ -46,9 +46,9 @@ export default function Headbar({
             <div className="flex justify-end">
               <button onClick={handleClick}>
                 {menuBar ? (
-                  <IoClose className="my-auto text-blue text-2xl rounded-full border border-2 hover:bg-blue hover:text-white" />
+                  <IoClose className="my-auto text-blue text-2xl rounded-full border border-2 hover:bg-blue hover:text-white md:hover:scale-110 transition-transform hover:font-semibold" />
                 ) : (
-                  <HiBars2 className="my-auto text-blue text-2xl rounded-full border border-2 hover:bg-blue hover:text-white" />
+                  <HiBars2 className="my-auto text-blue text-2xl rounded-full border border-2 hover:bg-blue hover:text-white md:hover:scale-110 transition-transform hover:font-semibold" />
                 )}
               </button>
             </div>
