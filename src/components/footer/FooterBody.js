@@ -26,7 +26,7 @@ export default function FooterBody() {
             </p>
             <div className="flex gap-x-2 py-1">
               <FaRegCopyright className="text-white my-auto text-sm " />
-              <p className="text-sm font-semibold text-white">
+              <p className="text-xs font-semibold text-white">
                 2024 Muhammad Rizky Firdaus
               </p>
             </div>
