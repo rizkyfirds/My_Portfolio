@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import "./index.css";
-import "./App.css";
 import { BiSolidToTop } from "react-icons/bi";
 import Header from "../src/components/header/Header.js";
 import Headbar from "./components/headbar/Headbar.js";
@@ -9,8 +7,11 @@ import ExperienceBody from "./components/experienceBody/ExperienceBody.js";
 import ProjectBody from "./components/project/ProjectBody.js";
 import CertificateBody from "./components/certificateBody/CertificateBody.js";
 import FooterBody from "./components/footer/FooterBody.js";
+import "./index.css";
+import "./App.css";
 
 function App() {
+  const [loading, setLoading] = useState(true); // New loading state
   const [experienceStat, isExperienceStat] = useState(false);
   const [projectStat, isProjectStat] = useState(false);
   const [certificateeStat, isCertificateeStat] = useState(false);
@@ -24,7 +25,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowScrollButton(window.scrollY === 0 ? false : true);
+      setShowScrollButton(window.scrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -32,6 +33,10 @@ function App() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1500);
   }, []);
 
   useEffect(() => {
@@ -56,54 +61,60 @@ function App() {
 
   return (
     <ParallaxProvider>
-      <div className="h-full w-full font-inter relative bg-custom-white bg-whiteMain">
-        <div className="fixed top-0 z-20 w-full h-14 bg-custom-white bg-whiteMain">
-          <Headbar
-            exp={experienceStat}
-            isExp={isExperienceStat}
-            pro={projectStat}
-            isPro={isProjectStat}
-            certif={certificateeStat}
-            isCertif={isCertificateeStat}
-            cont={contactStat}
-            isCont={isContactStat}
-          />
+      {loading ? (
+        <div className="flex items-center justify-center h-screen ">
+          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue"></div>
         </div>
-        <Parallax speed={20} translateY={["-200px", "180px"]} className="z-0">
-          <div className="h-fit md:mx-[80px] py-12 lg:py-[84px]">
-            <Header />
+      ) : (
+        <div className="h-full w-full font-inter relative bg-custom-white bg-whiteMain">
+          <div className="fixed top-0 z-20 w-full h-14 bg-custom-white bg-whiteMain">
+            <Headbar
+              exp={experienceStat}
+              isExp={isExperienceStat}
+              pro={projectStat}
+              isPro={isProjectStat}
+              certif={certificateeStat}
+              isCertif={isCertificateeStat}
+              cont={contactStat}
+              isCont={isContactStat}
+            />
           </div>
-        </Parallax>
-        <div
-          className="h-fit w-full bg-custom-blue bg-blueBackground px-[15px] md:px-[30px] py-12 lg:py-[84px] z-10 relative"
-          ref={experienceRef}
-        >
-          <ExperienceBody />
-        </div>
-        <div className="h-fit md:mx-[80px] py-12 lg:py-[64px]" ref={projectRef}>
-          <ProjectBody />
-        </div>
-        <div
-          className="h-fit md:mx-[80px] py-12 lg:pb-[64px] lg:pt-[20px]"
-          ref={certificateRef}
-        >
-          <CertificateBody />
-        </div>
-        <div
-          className="h-fit bg-custom-blue bg-blueBackground md:px-10 py-12 lg:py-[84px]"
-          ref={contactRef}
-        >
-          <FooterBody />
-        </div>
-        {showScrollButton && (
-          <button
-            className="fixed bottom-8 right-8 z-10 bg-blue rounded-full shadow-xl p-4 text-white animate-bounce"
-            onClick={handleMoveToTop}
+          <Parallax speed={20} translateY={["-200px", "180px"]} className="z-0">
+            <div className="h-fit md:mx-[80px] py-12 lg:py-[84px]">
+              <Header />
+            </div>
+          </Parallax>
+          <div
+            className="h-fit w-full bg-custom-blue bg-blueBackground px-[15px] md:px-[30px] py-12 lg:py-[84px] z-10 relative"
+            ref={experienceRef}
           >
-            <BiSolidToTop className="text-xl " />
-          </button>
-        )}
-      </div>
+            <ExperienceBody />
+          </div>
+          <div className="h-fit md:mx-[80px] py-12 lg:py-[64px]" ref={projectRef}>
+            <ProjectBody />
+          </div>
+          <div
+            className="h-fit md:mx-[80px] py-12 lg:pb-[64px] lg:pt-[20px]"
+            ref={certificateRef}
+          >
+            <CertificateBody />
+          </div>
+          <div
+            className="h-fit bg-custom-blue bg-blueBackground md:px-10 py-12 lg:py-[84px]"
+            ref={contactRef}
+          >
+            <FooterBody />
+          </div>
+          {showScrollButton && (
+            <button
+              className="fixed bottom-8 right-8 z-10 bg-blue rounded-full shadow-xl p-4 text-white animate-bounce"
+              onClick={handleMoveToTop}
+            >
+              <BiSolidToTop className="text-xl " />
+            </button>
+          )}
+        </div>
+      )}
     </ParallaxProvider>
   );
 }

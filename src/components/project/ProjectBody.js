@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BsArrowDownRightCircle } from "react-icons/bs";
 import ProjectText from "./ProjectText";
 import ReactPlayer from "react-player/youtube";
 import Port from "../../assets/projectPort.png";
 import Drink from "../../assets/drink.png";
 import PortCC from "../../assets/CacaPort.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function ProjectBody() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div className="m-4">
       <div className="flex text-blue justify-between mb-6 md:mb-[64px]">
@@ -15,7 +20,7 @@ export default function ProjectBody() {
       </div>
       <div className="md:mb-9">
         <div className="md:flex md:gap-8">
-          <div className="md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8">
+          <div className="md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8" data-aos="fade-right">
             <ProjectText
               label={
                 "Administration Website of SD Islam Terpadu INSPIRATIF Bojongsari"
@@ -30,7 +35,7 @@ export default function ProjectBody() {
                 className="md:w-auto w-full h-full"
               />
           </div>
-          <div className="md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8">
+          <div className="md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8" data-aos="fade-left">
             <ProjectText
               label={"My Portfolio"}
               desc={"This portfolio was built using React.js and Tailwind CSS."}
@@ -46,7 +51,7 @@ export default function ProjectBody() {
           </div>
         </div>
         <div className="md:flex gap-8">
-          <div className=" md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8">
+          <div className=" md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8" data-aos="fade-right">
             <ProjectText
               label={"Drink RL"}
               desc={
@@ -62,7 +67,7 @@ export default function ProjectBody() {
               className="rounded-3xl border-blue p-1 border-4"
             />
           </div>
-          <div className="md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8">
+          <div className="md:w-1/2 p-7 rounded-3xl bg-custom-blue bg-blueBackground mb-8" data-aos="fade-left">
             <ProjectText
               label={"Portfolio Salsabila"}
               desc={

@@ -3,6 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { IoClose } from "react-icons/io5";
 import msib from "../../assets/msib.jpg";
 import magenta from "../../assets/magenta.jpg";
+import sertif_fullstack from "../../assets/sertif_fullstack.jpg";
 
 export default function HoverImg({ company, desc, titleImg }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -36,7 +37,7 @@ export default function HoverImg({ company, desc, titleImg }) {
   }, [isModalOpen])
 
   return (
-    <div className="snap-start h-fit min-w-72 max-w-full mb-4">
+    <div className="snap-start h-fit min-w-72 max-w-72 md:max-w-[600px] mb-4">
       <h1 className="text-lg md:text-xl lg:text-3xl text-blue font-bold mb-2 lg:mb-4">
         {company}
       </h1>
